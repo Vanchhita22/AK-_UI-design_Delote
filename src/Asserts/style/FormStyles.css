@@ -1,0 +1,183 @@
+/* src/components/FormStyles.css */
+
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #f0f2f5;
+}
+
+/* Container Styling */
+.container.forms {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #4070f4;
+    padding: 20px;
+}
+
+/* Form Styling */
+.form {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+/* Form Content Styling */
+.form-content {
+    padding: 20px;
+}
+
+/* Header Styling */
+header {
+    font-size: 28px;
+    font-weight: 600;
+    color: #232836;
+    text-align: center;
+    margin-bottom: 20px; /* Adds space below the header */
+}
+
+/* Input Field Styling */
+.field.input-field {
+    margin-bottom: 20px;
+}
+
+.input, .password {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.input:focus, .password:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    outline: none;
+}
+
+/* Error Message Styling */
+.error {
+    color: #e74c3c;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+/* Button Styling */
+.button-field button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    background: #007bff;
+    border: none;
+    color: #fff;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.button-field button:hover {
+    background: #0056b3;
+}
+
+.button-field button:active {
+    transform: scale(0.98);
+}
+
+/* Form Link Styling */
+.form-link {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.form-link .link {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.form-link .link:hover {
+    text-decoration: underline;
+}
+
+/* Divider Line Styling */
+.line {
+    margin: 30px 0;
+    border-top: 1px solid #ddd;
+    position: relative;
+}
+
+.line::before {
+    content: 'Or';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    padding: 0 15px;
+    color: #888;
+}
+
+/* Media Options Styling */
+.media-options {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.media-options .field {
+    display: flex;
+    align-items: center;
+    margin: 0 10px;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 6px;
+    background: #f7f7f7;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.media-options .field:hover {
+    background: #e9ecef;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.media-options .field span {
+    margin-left: 8px;
+    font-weight: 500;
+}
+
+/* Google Image Styling */
+.google-img {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+    margin-right: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+    .form {
+        padding: 20px;
+    }
+
+    .input, .password {
+        padding: 10px;
+    }
+
+    .button-field button {
+        padding: 10px;
+    }
+}
