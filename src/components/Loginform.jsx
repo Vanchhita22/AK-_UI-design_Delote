@@ -78,7 +78,7 @@ const LoginForm = ({ onSwitchToSignup }) => {
                 </a>
             </div>
         </div>
-    );
+    ); 
 };
 
 export default LoginForm;

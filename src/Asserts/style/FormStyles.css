@@ -1,6 +1,4 @@
-/* src/components/FormStyles.css */
 
-/* Basic Reset */
 * {
     margin: 0;
     padding: 0;
@@ -12,7 +10,7 @@ body {
     background-color: #f0f2f5;
 }
 
-/* Container Styling */
+
 .container.forms {
     display: flex;
     justify-content: center;
@@ -22,7 +20,7 @@ body {
     padding: 20px;
 }
 
-/* Form Styling */
+
 .form {
     width: 100%;
     max-width: 400px;
@@ -34,12 +32,12 @@ body {
     transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
-/* Form Content Styling */
+
 .form-content {
     padding: 20px;
 }
 
-/* Header Styling */
+
 header {
     font-size: 28px;
     font-weight: 600;
@@ -48,7 +46,7 @@ header {
     margin-bottom: 20px; /* Adds space below the header */
 }
 
-/* Input Field Styling */
+
 .field.input-field {
     margin-bottom: 20px;
 }
@@ -67,14 +65,14 @@ header {
     outline: none;
 }
 
-/* Error Message Styling */
+
 .error {
     color: #e74c3c;
     font-size: 12px;
     margin-top: 5px;
 }
 
-/* Button Styling */
+
 .button-field button {
     width: 100%;
     padding: 12px;
@@ -97,7 +95,7 @@ header {
     transform: scale(0.98);
 }
 
-/* Form Link Styling */
+
 .form-link {
     text-align: center;
     margin-top: 15px;
@@ -113,7 +111,7 @@ header {
     text-decoration: underline;
 }
 
-/* Divider Line Styling */
+
 .line {
     margin: 30px 0;
     border-top: 1px solid #ddd;
@@ -131,7 +129,7 @@ header {
     color: #888;
 }
 
-/* Media Options Styling */
+
 .media-options {
     display: flex;
     justify-content: center;
@@ -159,7 +157,7 @@ header {
     font-weight: 500;
 }
 
-/* Google Image Styling */
+
 .google-img {
     width: 24px;
     height: 24px;

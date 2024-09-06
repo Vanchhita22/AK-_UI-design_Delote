@@ -1,0 +1,57 @@
+/* src/Asserts/style/DigitalLibrary.css */
+.digital-library {
+    padding: 20px;
+    margin-left: 250px; /* Adjust based on sidebar width */
+    max-width: calc(100% - 250px); /* Adjust to ensure it doesn’t overlap with sidebar */
+    font-family: Arial, sans-serif;
+    color: #333;
+    margin-top: 70px; /* Adjust based on header height if needed */
+    background-color: #f4f4f4; /* Light background for better contrast */
+    border-radius: 8px; /* Rounded corners for a softer look */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.digital-library h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+    border-bottom: 2px solid #007bff; /* Underline with a color accent */
+    padding-bottom: 10px;
+}
+
+.digital-library ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.digital-library li {
+    margin-bottom: 15px;
+    transition: background-color 0.3s, border-radius 0.3s; /* Smooth transition effects */
+}
+
+.digital-library li:hover {
+    background-color: #e0f7fa; /* Light blue background on hover */
+    border-radius: 5px; /* Slightly rounded corners on hover */
+    padding: 10px; /* Add padding on hover */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Shadow effect on hover */
+}
+
+.digital-library a {
+    color: #007bff;
+    text-decoration: none;
+    font-size: 16px; /* Slightly larger font size for better readability */
+}
+
+.digital-library a:hover {
+    text-decoration: underline;
+    color: #0056b3; /* Darker shade for hover effect */
+}
+
+@media (max-width: 768px) {
+    .digital-library {
+        margin-left: 0;
+        margin-top: 170px;
+        max-width: 100%;
+    }
+}

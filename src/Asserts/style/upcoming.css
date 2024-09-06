@@ -1,0 +1,105 @@
+/* Upcoming Section Styling */
+.Upcoming {
+  padding: 20px;
+  margin-left: 250px; /* Adjust based on sidebar width */
+  max-width: calc(100% - 250px); /* Ensures no overlap with the sidebar */
+  font-family: Arial, sans-serif;
+  color: #333;
+  margin-top: 70px; /* Adjust for header height */
+  border-radius: 8px; /* Rounded corners */
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+
+.Upcoming h2 {
+  margin-bottom: 20px;
+  font-size: 28px;
+  color: #333;
+  text-align: center;
+}
+
+.upcoming-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.upcoming-item {
+  padding: 15px;
+  margin-bottom: 10px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.upcoming-item:hover {
+  transform: scale(1.02); /* Slightly scales up on hover */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* Elevates on hover */
+}
+
+.upcoming-item h3 {
+  margin: 0 0 10px;
+  font-size: 22px;
+  color: #0056b3;
+}
+
+.upcoming-item p {
+  margin: 5px 0;
+  font-size: 16px;
+  color: #555;
+}
+
+.pdf-link, .youtube-link {
+  display: inline-block;
+  color: #007bff;
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+.pdf-link:hover, .youtube-link:hover {
+  text-decoration: underline;
+}
+
+/* Media Queries for Responsiveness */
+
+/* Medium Devices (Tablets and small desktops) */
+@media (max-width: 768px) {
+  .Upcoming {
+      margin-left: 0; /* Sidebar might collapse, so reset margin */
+      max-width: 100%; /* Full width on smaller devices */
+      padding: 15px;
+      margin-top: 60px; /* Adjust for smaller header */
+  }
+  .Upcoming h2 {
+      font-size: 24px;
+  }
+  .upcoming-item h3 {
+      font-size: 20px;
+  }
+  .upcoming-item p {
+      font-size: 14px;
+  }
+}
+
+/* Small Devices (Mobile phones) */
+@media (max-width: 480px) {
+  .Upcoming {
+      padding: 10px;
+      margin-top: 180px;
+  }
+  .Upcoming h2 {
+      font-size: 20px;
+  }
+  .upcoming-item {
+      padding: 10px;
+  }
+  .upcoming-item h3 {
+      font-size: 18px;
+  }
+  .upcoming-item p {
+      font-size: 12px;
+  }
+  .pdf-link, .youtube-link {
+      font-size: 14px;
+  }
+}

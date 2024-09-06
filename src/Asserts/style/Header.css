@@ -1,0 +1,426 @@
+/* Default styles (for larger screens) */
+.header {
+  position: fixed; /* Fixes the header at the top */
+  top: 0;
+  left: 0;
+  width: 100%; /* Ensures the header spans the full width */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: #333;
+  color: #fff;
+  z-index: 1000; /* Ensures the header is above other content */
+}
+
+.search-container {
+  margin-left: auto; /* Push the search container to the right */
+  display: flex;
+  align-items: center;
+  padding: 0 1rem;
+}
+
+.header h2 {
+  color: #ff0000;
+  margin-left: 20px;
+}
+
+.search-container input[type="text"] {
+  padding: 0.5rem;
+  border: none;
+  border-radius: 0.25rem;
+  width: 100%;
+}
+
+.header-icons {
+  display: flex;
+  align-items: center;
+}
+
+.notification-section {
+  position: relative;
+  margin-right: 1rem;
+}
+
+.notification-button {
+  background-color: transparent;
+  border: none;
+  padding: 0.5rem;
+  cursor: pointer;
+}
+
+.notification-icon {
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+.notification-dropdown-menu {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: #333;
+  padding: 0.5rem;
+  border: 1px solid #444;
+  border-radius: 0.25rem;
+  display: flex;
+  flex-direction: column;
+  z-index: 1001; /* Ensures the dropdown is above other content */
+}
+
+.notification-dropdown-menu p {
+  margin-bottom: 0.5rem;
+  padding: 0.5rem;
+  cursor: pointer;
+}
+
+.notification-dropdown-menu p:hover {
+  background-color: #444;
+}
+
+.profile-section {
+  position: relative;
+}
+
+.profile-button {
+  background-color: transparent;
+  border: none;
+  padding: 0.5rem;
+  cursor: pointer;
+}
+
+.profile-icon {
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: #2e2b2b;
+  padding: 0.5rem;
+  border: 1px solid #444;
+  border-radius: 0.25rem;
+  display: flex;
+  flex-direction: column;
+  width: 200px; /* Width for the dropdown */
+  z-index: 1001; /* Ensures the dropdown is above other content */
+}
+
+.dropdown-menu p {
+  margin-bottom: 0.5rem;
+  padding: 0.5rem;
+  cursor: pointer;
+}
+
+.dropdown-menu button {
+  margin-bottom: 0.5rem;
+  padding: 0.5rem;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  color: #fff;
+}
+
+.dropdown-menu button:hover {
+  background-color: #444;
+}
+
+.logout-button {
+  color: #ff0000;
+}
+
+.book-a-call-button, .rankers-button, .doubts-session-button, .upcoming-classes-button, .session-notes-button {
+  display: flex;
+  align-items: center;
+}
+
+.book-a-call-button svg, .rankers-button svg, .doubts-session-button svg, .upcoming-classes-button svg, .session-notes-button svg {
+  margin-right: 0.5rem;
+}
+
+.form-container {
+  position: absolute;
+  top: 60%;
+  left: 10%;
+  transform: translateX(-50%);
+  background-color: #fff;
+  border: 1px solid #ccc;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  border-radius: 0.5rem;
+  width: 300px; /* Adjust width as needed */
+  z-index: 1001; /* Ensures the form is above other content */
+}
+
+.call-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.call-form h4 {
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.call-form label {
+  margin-bottom: 0.5rem;
+  color: #555;
+}
+
+.call-form input {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 0.25rem;
+  margin-bottom: 1rem;
+  width: 100%;
+}
+
+.call-form button {
+  padding: 0.5rem;
+  border: none;
+  border-radius: 0.25rem;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.call-form button:hover {
+  background-color: #0056b3;
+}
+
+.call-form input[type="text"], 
+.call-form input[type="email"], 
+.call-form input[type="tel"] {
+  font-size: 0.875rem; /* Adjust font size if needed */
+}
+
+.call-form button[type="submit"] {
+  background-color: #28a745;
+}
+
+.call-form button[type="submit"]:hover {
+  background-color: #218838;
+}
+
+.rankers-list {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #fff;
+  border: 1px solid #ccc;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  border-radius: 0.5rem;
+  width: 300px; /* Adjust width as needed */
+  z-index: 1001; /* Ensures the list is above other content */
+}
+
+
+
+.rankers-list p {
+  margin: 0.5rem 0;
+  color: #333;
+  cursor: pointer;
+}
+
+.rankers-list p:hover {
+  background-color: #f0f0f0;
+}
+
+
+
+.doubts-session-button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+.doubts-session-button svg {
+  margin-right: 8px;         /* Space between icon and text */
+}
+
+/* Form container styling */
+.doubts-session-form-container {
+  margin-top: 20px;          /* Space above form */
+  border: 1px solid #ccc;    /* Border around form */
+  padding: 20px;             /* Padding inside form */
+  border-radius: 5px;        /* Rounded corners */
+  background-color: #f9f9f9; /* Light background */
+}
+
+/* Form styling */
+.doubts-session-form {
+  display: flex;             /* Flexbox for alignment */
+  flex-direction: column;    /* Stack elements vertically */
+ left: 50px;
+}
+
+.doubts-session-form h4 {
+  margin-bottom: 15px;       /* Space below heading */
+  color: #000;
+}
+
+.doubts-session-form label {
+  margin-bottom: 10px;       /* Space between form fields */
+  color: #2e2b2b;
+}
+
+.doubts-session-form input {
+  width: 100%;                /* Full width */
+  padding: 8px;              /* Padding inside input */
+  border: 1px solid #ccc;    /* Border around input */
+  border-radius: 4px;        /* Rounded corners */
+}
+
+.doubts-session-form button {
+  background-color: #28a745; /* Green background */
+  color: rgb(15, 15, 15);              /* White text */
+  border: none;              /* No border */
+  padding: 10px 15px;        /* Padding for size */          /* Font size */
+  border-radius: 5px;        /* Rounded corners */
+  cursor: pointer;           /* Pointer cursor on hover */
+  margin-top: 10px;          /* Space above button */
+}
+
+.doubts-session-form button:hover {
+  background-color: #218838; /* Darker green on hover */
+}
+
+/* Media Queries for Responsiveness */
+
+/* For tablets and smaller screens */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .search-container {
+    width: 100%;
+    padding: 0;
+    margin-top: 1rem;
+  }
+
+  .search-container input[type="text"] {
+    width: 100%;
+  }
+
+  .header-icons {
+    margin-top: 1rem;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .notification-section,
+  .profile-section {
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  .dropdown-menu,
+  .notification-dropdown-menu,
+  .form-container,
+  .rankers-list {
+    width: 100%;
+    left: 0;
+    transform: none;
+    top: auto;
+    position: relative;
+  }
+}
+
+/* For mobile phones */
+@media (max-width: 480px) {
+  .header {
+    padding: 0.5rem;
+  }
+
+  .header h2 {
+    font-size: 1.25rem;
+    margin-left: 0;
+  }
+
+  .search-container input[type="text"] {
+    padding: 0.25rem;
+    font-size: 0.875rem;
+  }
+
+  .header-icons .notification-icon,
+  .header-icons .profile-icon {
+    font-size: 1.25rem;
+  }
+
+  .dropdown-menu,
+  .notification-dropdown-menu,
+  .form-container,
+  .rankers-list
+   {
+    width: 100%;
+    top: auto;
+    left: 0;
+  }
+
+
+
+  .call-form button {
+    font-size: 0.875rem;
+  }
+}
+
+
+.session-notes-button {
+  display: inline-flex;
+  align-items: center;
+  padding: 10px 10px;
+  color: #fff; /* Text color */
+  text-decoration: none; /* Remove underline */
+  border-radius: 5px; /* Rounded corners */
+  font-size: 13px;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Smooth transition for hover */
+  font-weight: bold;
+}
+
+.session-notes-button:hover {
+  background-color: #0056b3; /* Darker shade on hover */
+}
+
+.session-notes-button .faBook {
+  margin-right: 8px; /* Space between icon and text */
+}
+
+.header-buttons {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.ncert-button {
+  padding: 8px 16px;
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.ncert-button:hover {
+  background-color: #218838;
+}
+
+.pdf-link {
+  display: inline-block;
+  padding: 8px 16px;
+  background-color: #007bff;
+  color: #fff;
+  border-radius: 5px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.pdf-link:hover {
+  background-color: #0056b3;
+}

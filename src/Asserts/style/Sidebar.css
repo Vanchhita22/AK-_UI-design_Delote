@@ -1,0 +1,143 @@
+/* Sidebar container */
+.sidebar {
+  width: 250px;
+  background-color: #f4f4f4;
+  height: 100vh;
+  padding: 20px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 0px; /* Ensures the sidebar starts below the header */
+  left: 0;
+  overflow-y: auto; /* Allows scrolling if the content exceeds viewport height */
+  transition: transform 0.3s ease; /* Smooth transition for slide effect */
+  z-index: 1000; /* Ensures it stays on top of the content */
+}
+
+/* Sidebar list */
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0; /* Remove default margin for better alignment */
+}
+
+/* Sidebar list items */
+.sidebar ul li {
+  margin: 12px 0; /* Add spacing between the sidebar items */
+}
+
+/* Sidebar link styling */
+.sidebar-link {
+  text-decoration: none;
+  color: #333;
+  font-size: 18px;
+  display: block;
+  padding: 10px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth color change */
+}
+
+/* Hover state for sidebar links */
+.sidebar-link:hover {
+  background-color: #e2e2e2;
+  color: #000;
+}
+
+/* Active link styling */
+.sidebar-link.active {
+  background-color: #007bff;
+  color: #fff;
+}
+
+/* --- Responsiveness --- */
+
+/* Medium devices (tablets) */
+@media (max-width: 768px) {
+  .sidebar {
+    width: 200px; /* Reduce sidebar width for smaller screens */
+  }
+}
+
+/* Small devices (mobile) */
+@media (max-width: 480px) {
+  .sidebar {
+    width: 100%; /* Full width on mobile */
+    height: auto; /* Allow the sidebar to grow based on content */
+    position: fixed; /* Fixed position for mobile */
+    top: 60px; /* Align with the header */
+    left: 0;
+    transform: translateX(-100%); /* Initially hide sidebar off the screen */
+    transition: transform 0.3s ease; /* Smooth slide-in effect */
+    z-index: 1000; /* Ensure it stays on top of other elements */
+  }
+
+  /* Show the sidebar when the 'open' class is added */
+  .sidebar.open {
+    transform: translateX(0); /* Slide the sidebar into view */
+  }
+}
+
+/* src/Asserts/style/Sidebar.css */
+
+/* General sidebar styling */
+.sidebar {
+  width: 250px;
+  background-color: #f4f4f4;
+  height: 100vh;
+  padding: 20px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 60px; /* Ensures the sidebar starts below the header */
+  left: 0;
+  overflow-y: auto;
+  transition: transform 0.3s ease; /* Smooth slide effect */
+  z-index: 1000; /* Keeps it above other content */
+}
+
+/* Initially hide the sidebar in mobile view */
+@media (max-width: 480px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: fixed;
+    margin-top: 40px;
+    top: 60px;
+    left: 0;
+    transform: translateX(-100%); /* Sidebar hidden initially */
+    z-index: 1000;
+  }
+
+  /* When 'open' class is applied, sidebar slides in */
+  .sidebar.open {
+    transform: translateX(0); /* Show sidebar */
+  }
+
+  /* Adjust sidebar links for mobile */
+  .sidebar ul li {
+    margin: 12px 0;
+  }
+
+  .sidebar-link {
+    font-size: 18px;
+    display: block;
+    padding: 10px;
+  }
+}
+
+/* Toggle button for opening sidebar */
+.sidebar-toggle {
+  font-size: 24px;
+  background-color: transparent;
+  border: none;
+  color: #333;
+  cursor: pointer;
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  z-index: 2000; /* Higher than sidebar */
+}
+
+.sidebar-toggle:focus {
+  outline: none;
+}
+
+

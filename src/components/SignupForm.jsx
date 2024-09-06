@@ -11,7 +11,6 @@ const SignupForm = ({ onSwitchToLogin }) => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        // Basic validation
         const newErrors = {};
         if (!email) newErrors.email = 'Email is required';
         if (!password) newErrors.password = 'Password is required';
@@ -20,7 +19,6 @@ const SignupForm = ({ onSwitchToLogin }) => {
             setErrors(newErrors);
             return;
         }
-        // Handle form submission
         console.log({ email, password });
     };
 

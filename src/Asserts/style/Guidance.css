@@ -1,0 +1,80 @@
+/* src/Asserts/style/Guidance.css */
+
+.guidance-container {
+  margin-left: 250px; /* Adjust based on sidebar width */
+  padding: 20px;
+  max-width: calc(100% - 250px); /* Ensure it doesn’t overlap with sidebar */
+  font-family: Arial, sans-serif;
+  color: #333;
+  margin-top: 70px; /* Adjust based on header height if needed */
+}
+
+h1 {
+  font-size: 28px;
+  color: #007bff;
+  margin-bottom: 20px;
+}
+
+.guidance-content {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.guidance-section {
+  margin-bottom: 20px;
+}
+
+.guidance-section h2 {
+  font-size: 22px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.guidance-section p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #555;
+}
+
+.guidance-section ul {
+  list-style-type: disc;
+  margin-left: 20px;
+  color: #555;
+}
+
+.guidance-section ul li {
+  margin-bottom: 8px;
+}
+
+/* Media query for responsiveness */
+@media (max-width: 1024px) {
+  .guidance-container {
+    margin-left: 0;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .guidance-container {
+    padding: 10px; /* Reduce padding for smaller screens */
+    margin-top: 160px;
+  }
+
+  .guidance-content {
+    padding: 15px; /* Adjust padding inside the content */
+  }
+
+  h1 {
+    font-size: 24px; /* Adjust heading size */
+  }
+
+  .guidance-section h2 {
+    font-size: 20px; /* Adjust subheading size */
+  }
+
+  .guidance-section p {
+    font-size: 14px; /* Adjust paragraph text size */
+  }
+}

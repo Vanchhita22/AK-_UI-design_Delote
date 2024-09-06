@@ -1,0 +1,267 @@
+/* Global styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+/* About Section */
+.About {
+  padding: 20px;
+  margin-left: 250px; /* Adjust based on sidebar width */
+  max-width: calc(100% - 250px); /* Adjust to ensure it doesn’t overlap with sidebar */
+  margin-top: 70px; /* Adjust based on header height */
+  background-color: #f4f4f4;
+  border-radius: 8px;
+  position: relative;
+  text-align: center; /* Center align text and image */
+}
+
+.About .poster-container {
+  display: flex;
+  justify-content: center; /* Center the poster image */
+  margin-bottom: 20px; /* Add space below the image */
+}
+
+.About img {
+  max-width: 80%; /* Ensure the image is responsive */
+  height: auto; /* Maintain aspect ratio */
+}
+
+/* Button Container */
+.About .button-container button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Rankers Container */
+.rankers-container {
+  padding: 20px;
+  margin: 20px;
+  background-color: #f4f4f4;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.rankers-container h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #333;
+}
+
+.rankers-container img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Services Section */
+.services-container {
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 800px;
+  background-color: #f4f4f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.services-heading {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.services-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.service-item {
+  font-size: 1.2rem;
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 15px;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.service-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.service-item:nth-child(odd) {
+  background-color: #e9ecef;
+}
+
+.service-item:nth-child(even) {
+  background-color: #f8f9fa;
+}
+
+/* Contact Section */
+.contact-container {
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 600px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-container h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  font-size: 1rem;
+  margin-bottom: 5px;
+  color: #555;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 0 4px rgba(0, 123, 255, 0.2);
+}
+
+.submit-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 15px;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.submit-button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+.success-message {
+  color: #28a745;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.error-message {
+  color: #dc3545;
+  font-size: 1rem;
+  text-align: center;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1024px) {
+  .About {
+      margin-left: 0;
+      max-width: 100%;
+  }
+
+  .rankers-container,
+  .services-container,
+  .contact-container {
+      padding: 15px;
+      margin: 15px;
+  }
+
+  .services-heading {
+      font-size: 1.8rem;
+  }
+
+  .service-item {
+      font-size: 1.1rem;
+      padding: 12px;
+  }
+}
+
+@media (max-width: 768px) {
+  .About {
+      margin-left: 0;
+      max-width: 100%;
+      padding: 15px;
+  }
+
+  .services-heading,
+  .contact-container h2 {
+      font-size: 1.6rem;
+  }
+
+  .service-item,
+  .form-group input,
+  .form-group textarea {
+      font-size: 1rem;
+      padding: 10px;
+  }
+
+  .submit-button {
+      padding: 12px;
+      font-size: 0.9rem;
+  }
+
+  .poster-container img {
+      max-width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  .About {
+      padding: 10px;
+      margin-top: 140px;
+  }
+
+  .services-heading,
+  .contact-container h2 {
+      font-size: 1.4rem;
+  }
+
+  .service-item {
+      font-size: 0.9rem;
+      padding: 8px;
+  }
+
+  .form-group label,
+  .form-group input,
+  .form-group textarea {
+      font-size: 0.9rem;
+  }
+
+  .submit-button {
+      padding: 10px;
+      font-size: 0.8rem;
+  }
+
+  .poster-container img {
+      max-width: 100%;
+  }
+}

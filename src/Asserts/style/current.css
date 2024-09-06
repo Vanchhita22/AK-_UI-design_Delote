@@ -1,0 +1,9 @@
+.current{
+    padding: 20px;
+    margin-left: 250px; /* Adjust based on sidebar width */
+    max-width: calc(100% - 250px); /* Adjust to ensure it doesn’t overlap with sidebar */
+    font-family: Arial, sans-serif;
+    color: #333;
+    margin-top: 70px; /* Adjust based on header height if needed */
+    border-radius: 8px; /* Rounded corners for a softer look */
+}

@@ -1,0 +1,127 @@
+/* Main Courses Container */
+.courses {
+  margin-left: 250px; /* Adjust based on sidebar width */
+  padding: 20px;
+  max-width: calc(100% - 250px); /* Ensure it doesn’t overlap with sidebar */
+  font-family: Arial, sans-serif;
+  color: #333;
+  margin-top: 70px; /* Adjust based on header height if needed */
+  background-image: url('/src/Asserts/images/img1.jfif'); /* Correct URL syntax */
+  background-size: cover; /* Ensure background image covers the container */
+  background-position: center; /* Center the background image */
+}
+
+/* Courses Header */
+.courses h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #007bff; /* Primary color for the heading */
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+/* Courses List Layout */
+.courses-list {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Three columns layout */
+  gap: 20px; /* Space between grid items */
+}
+
+/* Individual Course Item */
+.course-item {
+  background-color: #f9f9f9; /* Light background for each course */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+  text-align: center;
+  color: #fff; /* Ensure text contrast */
+  background-size: cover; /* Cover the entire container with the background image */
+  background-position: center; /* Center the background image */
+}
+
+/* Course Title */
+.course-item h3 {
+  font-size: 22px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+/* Course Description */
+.course-item p {
+  font-size: 16px;
+  margin-bottom: 10px;
+  line-height: 1.5;
+  color: #666;
+}
+
+/* Strong Emphasis */
+.course-item strong {
+  color: #7700ff;
+}
+
+/* Hover Effect */
+.course-item:hover {
+  transform: translateY(-5px); /* Slight lift on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+/* Media Queries for Responsiveness */
+
+/* Medium Devices (Tablets and small desktops) */
+@media (max-width: 1024px) {
+  .courses-list {
+      grid-template-columns: repeat(2, 1fr); /* Two columns on medium screens */
+  }
+}
+
+/* Small Devices (Mobile phones and tablets) */
+@media (max-width: 768px) {
+  .courses-list {
+      grid-template-columns: 1fr; /* Single column layout on small screens */
+  }
+  
+  .courses h2 {
+      font-size: 24px; /* Smaller heading on small screens */
+  }
+
+  .course-item {
+      padding: 15px; /* Adjust padding for small screens */
+  }
+
+  .course-item h3 {
+      font-size: 20px;
+  }
+
+  .course-item p {
+      font-size: 14px;
+  }
+}
+
+/* Even smaller devices (mobile phones) */
+@media (max-width: 480px) {
+  .courses {
+      margin-left: 0; /* No sidebar, full width */
+      max-width: 100%; /* Take full width */
+      padding: 15px;
+  }
+
+  .courses h2 {
+      font-size: 20px;
+  }
+
+  .course-item {
+      padding: 10px;
+  }
+
+  .course-item h3 {
+      font-size: 18px;
+  }
+
+  .course-item p {
+      font-size: 12px;
+  }
+}
